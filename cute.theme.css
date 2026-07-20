@@ -27,7 +27,7 @@
 
     /* background */
     --APP-BG-IMAGE: url(https://i.imgur.com/51ym8Fn.jpeg); /*must be a link to a trusted source. I recommend imgur*/
-    --APP-BG-IMAGE-SIZE: 20%; /* adjust this to make the image bigger or smaller */
+    --APP-BG-IMAGE-SIZE: 10%; /* adjust this to make the image bigger or smaller */
     --APP-BG-COLOR: #a69bbb; /* change this to fit your wallpaper's bg color! */
 }
 
