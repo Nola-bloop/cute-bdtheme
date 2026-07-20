@@ -173,8 +173,9 @@ messageListItem__5126c{
 .label__5a838, .vc-addon-card, .card_a12047, .vc-card-base, .vc-card-normal, .vc-card-defaultPadding{
     background-color: #ffffff50;
 }
-.label__5a838, .lineClamp1__4bd52, .defaultColor__5345c, .legend__7fb92, :not(){
+.label__5a838, .defaultColor__5345c, .legend__7fb92, .lineClamp1__4bd52{
     color:#f7e7bc !important;
+    background-color: transparent;
 }
 .card__1bfce, .boostRow__1bfce, .headingCard__92059, .card_b5dd01, .cardPrimary_b5dd01{
     background-color: #ffffff50;
