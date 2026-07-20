@@ -170,7 +170,7 @@ messageListItem__5126c{
     background-color: var(--APP-BG-COLOR);
     box-shadow: inset 0px 0px 100px #fff3eb;
 }
-.card_a12047{
+.vc-addon-card, .card_a12047, .vc-card-base, .vc-card-normal, .vc-card-defaultPadding{
     background-color: #ffffff50;
 }
 .defaultColor__5345c, .legend__7fb92 {
