@@ -1,0 +1,173 @@
+/* IMPORT CSS */
+@import url("https://clearvision.github.io/ClearVision-v7/main.css"); /* this is the template I used */
+@import url("https://clearvision.github.io/ClearVision-v7/betterdiscord.css"); /* idk what this is */
+
+/* this huge ass line are the fonts */
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Caveat:wght@400..700&family=Cookie&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Instrument+Serif:ital@0;1&family=Modern+Antiqua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+NZ+Guides&family=STIX+Two+Math&family=Satisfy&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/* SETTINGS */
+
+/* QUICK EDIT */
+:root{
+    /* List of available fonts
+
+        Ubuntu
+        STIX Two Math
+        Satisfy
+        Cookie
+        Modern Antiqua
+        Montserrat
+        Tinos
+        Caveat
+        Cormorant Garamond
+        Instrument Serif
+        Berkshire Swash
+
+    */
+    --MAIN-FONT: "Caveat";
+
+    /* background */
+    --APP-BG-IMAGE: url(https://i.imgur.com/51ym8Fn.jpeg); /*must be a link to a trusted source. I recommend imgur*/
+    --APP-BG-IMAGE-SIZE: 20%; /* adjust this to make the image bigger or smaller */
+    --APP-BG-COLOR: #a69bbb; /* change this to fit your wallpaper's bg color! */
+}
+
+
+
+:root {
+  /* ACCENT COLORS */
+  --main-color: #f9f8fcc2; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
+  --hover-color: #c5c2ff; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
+  --success-color: #43b581; /* positive accent color (hex, rgb or hsl) [default: #43b581] */
+  --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
+  /* STATUS COLORS */
+  --online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
+  --idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
+  --dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
+  --streaming-color: #593695; /* streaming status color (hex, rgb or hsl) [default: #593695] */
+  --offline-color: #b0a999; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
+  /* APP BACKGROUND */
+  --background-shading-percent: 0%; /* app background shading amount (0 for complete smoothness) [default: 100%] */
+  --background-image: var(--APP-BG-IMAGE); /* app background image (link must be HTTPS) [default: url(https://clearvision.github.io/images/sapphire.jpg)]*/
+  --background-position: center; /* app background position [default: center] */
+  --background-size: var(--APP-BG-IMAGE-SIZE); /* app background size (px) [default: cover] */
+  --background-attachment: fixed; /* app background attachment [default: fixed] */
+  --background-filter: saturate(calc(var(--saturation-factor, 1) * 1)); /* app background adjustments (ex: blur, saturation, brightness) (more info: https://developer.mozilla.org/en-US/docs/Web/CSS/filter) [default: saturate(calc(var(--saturation-factor, 1) * 1))] */
+  /* USER POPOUT BACKGROUND */
+  --user-popout-image: var(--background-image); /* user popout background image (link must be HTTPS) (not applied to nitro users) [default: var(--background-image)] */
+  --user-popout-position: var(--background-position); /* user popout position [default: var(--background-position)] */
+  --user-popout-size: var(--background-size); /* user popout size (px) [default: var(--background-size)] */
+  --user-popout-attachment: var(--background-attachment); /* user popout background attachment [default: var(--background-attachment)] */
+  --user-popout-filter: var(--background-filter); /* user popout background adjustments (ex: blur, saturation, brightness) (more info: https://developer.mozilla.org/en-US/docs/Web/CSS/filter) [default: var(--background-filter);] */
+  /* USER MODAL BACKGROUND */
+  --user-modal-image: var(--background-image); /* user modal background image (link must be HTTPS) (not applied to nitro users) [default: var(--background-image)] */
+  --user-modal-position: var(--background-position); /* user modal position [default: var(--background-position)] */
+  --user-modal-size: var(--background-size); /* user modal size (px) [default: var(--background-size)] */
+  --user-modal-attachment: var(--background-attachment); /* user modal background attachment [default: var(--background-attachment)] */
+  --user-modal-filter: var(--background-filter); /* user modal background adjustments (ex: blur, saturation, brightness) (more info: https://developer.mozilla.org/en-US/docs/Web/CSS/filter) [default: var(--background-filter);] */
+  /* HOME ICON */
+  --home-icon: url(https://clearvision.github.io/icons/discord.svg); /* home button icon (link must be HTTPS) [default: url(https://clearvision.github.io/icons/discord.svg)]*/
+  --home-size: center; /* home button icon size (px) [default:cover] */
+  /* FONTS */
+  --main-font: var(--MAIN-FONT), "Helvetica Neue", Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif] */
+  --code-font: "Ubuntu mono", Consolas, "Liberation Mono", Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
+  /* CHANNEL COLORS */
+  --channel-normal: var(--interactive-text-default); /* channel text color [default: var(--interactive-text-default)] */
+  --channel-muted: var(--interactive-muted); /* muted channel text color [default: var(--interactive-muted)] */
+  --channel-hover: var(--interactive-text-hover); /* hovered channel text color [default: var(--interactive-text-hover)] */
+  --channel-selected: var(--interactive-text-active); /* selected channel text color [default: var(--interactive-text-active)] */
+  --channel-selected-bg: var(--main-color); /* selected channel background [default: var(--main-color)] */
+  --channel-unread: var(--main-color); /* unread channel text color [default: var(--main-color)] */
+  --channel-unread-hover: var(--hover-color); /* unread channel hover color [default: var(--hover-color)] */
+  /* ACCESSIBILITY */
+  --focus-color: var(--main-color); /* outline when pressing TAB key [default: var(--main-color)] */
+}
+
+/* THEME SPECIFIC SHADING */
+/* LIGHT THEME */
+:is(.theme-light, .theme-dark .theme-light) {
+  --background-shading: #00000000; /* app background shading color [default: rgba(252, 252, 252, 0.3)] */
+  --card-shading: #ffffff70; /* cards background shading color [default: rgba(252, 252, 252, 0.3)] */
+  --popout-shading: #ffffff70; /* popouts background shading color [default: rgba(252, 252, 252, 0.7)] */
+  --modal-shading: rgba(250, 250, 250, 0.5); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --input-shading: #e6d4ff50; /* inputs background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --text-default: #f7e7bc;
+  --normal-text: #f7e7bc; /* text color [default: #36363c] */
+  --muted-text: #ffffd4; /* muted text color [default: #75757e] */
+}
+
+/* ASH THEME */
+:is(.theme-dark, .theme-light .theme-dark) {
+  --background-shading: rgba(0, 0, 0, 0.4); /* app background shading color [default: rgba(0, 0, 0, 0.4)] */
+  --card-shading: rgba(0, 0, 0, 0.2); /* cards background shading color [default: rgba(0, 0, 0, 0.2)] */
+  --popout-shading: rgba(0, 0, 0, 0.6); /* popouts background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --modal-shading: rgba(0, 0, 0, 0.4); /* modals background shading color [default: rgba(0, 0, 0, 0.4)] */
+  --input-shading: rgba(255, 255, 255, 0.05); /* inputs background shading color [default: rgba(255, 255, 255, 0.05)] */
+  --normal-text: #d8d8db; /* text color [default: #d8d8db] */
+  --muted-text: #aeaeb4; /* muted text color [default: #aeaeb4] */
+}
+
+/* DARK THEME */
+:is(.theme-darker, .theme-light .theme-darker) {
+  --background-shading: rgba(0, 0, 0, 0.6); /* app background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --card-shading: rgba(0, 0, 0, 0.3); /* cards background shading color [default: rgba(0, 0, 0, 0.3)] */
+  --popout-shading: rgba(0, 0, 0, 0.7); /* popouts background shading color [default: rgba(0, 0, 0, 0.7)] */
+  --modal-shading: rgba(0, 0, 0, 0.5); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --input-shading: rgba(255, 255, 255, 0.05); /* inputs background shading color [default: rgba(255, 255, 255, 0.05)] */
+  --normal-text: #fbfbfb; /* text color [default: #fbfbfb] */
+  --muted-text: #94949c; /* muted text color [default: #94949c] */
+}
+
+/* ONYX THEME */
+:is(.theme-midnight, .theme-light .theme-midnight) {
+  --background-shading: rgba(0, 0, 0, 0.8); /* app background shading color [default: rgba(0, 0, 0, 0.8)] */
+  --card-shading: rgba(0, 0, 0, 0.4); /* cards background shading color [default: rgba(0, 0, 0, 0.4)] */
+  --popout-shading: rgba(0, 0, 0, 0.8); /* popouts background shading color [default: rgba(0, 0, 0, 0.8)] */
+  --modal-shading: rgba(0, 0, 0, 0.6); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --input-shading: rgba(255, 255, 255, 0.05); /* inputs background shading color [default: rgba(255, 255, 255, 0.05)] */
+  --normal-text: #dcdcde; /* text color [default: #dcdcde] */
+  --muted-text: #86868e; /* muted text color [default: #86868e] */
+}
+
+/* ADD ADDITIONAL CSS BELOW HERE */
+#app-mount {
+	background-size: 10%;
+	background-position: center;
+	background-size: 200px;
+	background-repeat: no-repeat;
+}
+* {
+    text-shadow: 1px 1px 8px #48354a;
+}
+::selection, ::-moz-selection, :is(.theme-dark,.theme-light):not(.platform-osx) .leading_c38106::before{
+    content:"haha";
+    color:#f7e7bc !important;
+    text-shadow: 1px 1px 8px #fff3eb !important;
+}
+.username_c19a55{
+    color:#fff7fc !important;
+    text-shadow: 1px 1px 8px #fff3eb !important;
+}
+avatar_c19a55 clickable_c19a55{
+    box-shadow: 0px 0px 100px black;
+}
+messageListItem__5126c{
+    background-color: #48354a60 !important;
+}
+.container__8a031{ /*settings window*/
+    background-color: #00000060;
+}
+.bg__960e4{ /* app background */
+    background-color: var(--APP-BG-COLOR);
+    box-shadow: inset 0px 0px 100px #fff3eb;
+}
+.card_a12047{
+    background-color: #ffffff50;
+}
+.defaultColor__5345c, .legend__7fb92 {
+    color:#f7e7bc !important;
+}
+.card__1bfce, .boostRow__1bfce, .headingCard__92059, .card_b5dd01, .cardPrimary_b5dd01{
+    background-color: #ffffff50;
+}
+:is(.theme-dark,.theme-light):not(.platform-osx) .leading_c38106::after{content:"";position:static;margin-top:-5px;margin-left:5px;font-family:var(--code-font);font-size:11px;font-weight:600;color:var(--text-muted);order:2}
+:is(.theme-dark,.theme-light):not(.platform-osx) .leading_c38106::before{content:"꒰ঌI live in your walls ໒꒱";position:static;margin-left:10px;font-size:16px;font-weight:600;color:var(#ffffff) !important;order:2; text-shadow: 0 0 1px #ded6ab}
