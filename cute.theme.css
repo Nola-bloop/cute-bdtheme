@@ -177,6 +177,10 @@ messageListItem__5126c{
     color:#f7e7bc !important;
     background-color: transparent;
 }
+.grid__623de{
+    background-color: #00000040;
+    box-shadow: inset 0px 0px 10px #48354a60;
+}
 .card__1bfce, .boostRow__1bfce, .headingCard__92059, .card_b5dd01, .cardPrimary_b5dd01{
     background-color: #ffffff50;
 }
