@@ -179,7 +179,7 @@ messageListItem__5126c{
 }
 .embedDescription__623de *{
     color: #48354a60 !important;
-    text-shadow: none;
+    text-shadow: none !important;
 }
 .card__1bfce, .boostRow__1bfce, .headingCard__92059, .card_b5dd01, .cardPrimary_b5dd01{
     background-color: #ffffff50;
