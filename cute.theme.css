@@ -224,4 +224,4 @@ grid__623de{ /* embeds? */
     background-color: #ffffff50;
 }
 :is(.theme-dark,.theme-light):not(.platform-osx) .leading_c38106::after{content:"";position:static;margin-top:-5px;margin-left:5px;font-family:var(--code-font);font-size:11px;font-weight:600;color:var(--text-muted);order:2}
-:is(.theme-dark,.theme-light):not(.platform-osx) .leading_c38106::before{content:"꒰ঌI also live in your ceiling ໒꒱";position:static;margin-left:10px;font-size:16px;font-weight:600;color:var(#ffffff) !important;order:2; text-shadow: 0 0 1px #ded6ab}
+:is(.theme-dark,.theme-light):not(.platform-osx) .leading_c38106::before{content:"꒰ঌ Good morning ^~^ ໒꒱";position:static;margin-left:10px;font-size:16px;font-weight:600;color:var(#ffffff) !important;order:2; text-shadow: 0 0 1px #ded6ab}
