@@ -170,6 +170,7 @@ messageListItem__5126c{
 .message__5126c:hover{
     box-shadow: inset 0px 0px 40px #ffffff30;
 
+    backdrop-filter: blur(10px);
     background-color: #48354a90 !important;
 }
 .container__8a031{ /*settings window*/
