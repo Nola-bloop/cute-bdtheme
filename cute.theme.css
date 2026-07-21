@@ -170,8 +170,8 @@ messageListItem__5126c{
 .message__5126c:hover{
     box-shadow: inset 0px 0px 40px #ffffff30;
 
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px)!important;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px)!important;
     background-color: #48354a90 !important;
 }
 .container__8a031{ /*settings window*/
