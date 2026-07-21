@@ -163,6 +163,15 @@ avatar_c19a55 clickable_c19a55{
 messageListItem__5126c{
     background-color: #48354a60 !important;
 }
+.message__5126c{
+    padding-bottom: 5px !important;
+    padding-top: 5px !important;
+}
+.message__5126c:hover{
+    box-shadow: inset 0px 0px 40px #ffffff30;
+
+    background-color: #48354a90 !important;
+}
 .container__8a031{ /*settings window*/
     background-color: #00000060;
 }
