@@ -177,7 +177,16 @@ messageListItem__5126c{
     color:#f7e7bc !important;
     background-color: transparent;
 }
-
+.sidebarList__5e434 {
+    border-right: solid #00000010 2px;
+    border-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.members_c8ffbb{
+    border-left: solid #00000010 2px;
+    border-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 grid__623de{ /* embeds? */
     background-color: #ffffff50;
 }
